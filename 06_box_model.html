@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+    /* CSS Reset */
+    * {
+      padding: 0;
+      margin: 0;
+      /* keeps the padding within the box width not adds to the box width*/
+      box-sizing: border-box;
+    }
+    .box {
+      background: #f4f4f4;
+      border: 2px solid #000;
+      width: 500px;
+      /* Padding on all sides */
+      padding: 20px;
+      /* padding per side */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      /* padding shorthand top,right,bottom,left */
+      padding: 10px 20px 10px 20px;
+      /* padding shorthand top/bottom right/left */
+      padding: 10px 20px;
+
+      margin: 20px;
+      /* margin per side */
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      /* margin shorthand top,right,bottom,left */
+      margin: 10px 20px 10px 20px;
+      /* margin shorthand top/bottom right/left */
+      margin: 10px 20px;
+    }
+
+    .box h3{
+      padding-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box 1</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum eligendi?</p>    
+  </div>
+  <div class="box">
+    <h3>Box 2</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum eligendi?</p>    
+  </div>  
+</body>
+</html>

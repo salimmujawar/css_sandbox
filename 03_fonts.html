@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- External fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <title>Fonts</title>
+  <style>   
+   /* https://fonts.google.com/  */
+    body {
+      /* Web safe Fonts */
+      /* font-family: Arial, Helvetica, sans-serif; */
+      font-family: 'Roboto', sans-serif;
+      /* by default is 16px */
+      font-size: 18px;
+      /* common used is 1.6em */
+      line-height: 1.6em;
+    }
+    #welcome p span {
+      font-weight: bold;
+    }
+    #about p span {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsam perferendis! Quaerat corporis quas possimus, nemo in a? Ex, repudiandae.
+            Lorem ipsum dolor <span>amet consectetur </span>adipisicing elit. Accusamus, ipsam perferendis! Quaerat corporis quas possimus, nemo in a? Ex, repudiandae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ipsam perferendis! Quaerat corporis quas possimus, nemo in a? Ex, repudiandae.
+        </p>
+      </div>
+      <div  id="about">
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit <span>amet consectetur </span>adipisicing elit. Accusamus, ipsam perferendis! Quaerat corporis quas possimus, nemo in a? Ex, repudiandae.</p>
+      </div>
+      <div  id="unit_absolute">
+          <h2>Unit: Absolute</h2>
+          <ul>
+            <li>cm: Centimeter</li>
+            <li>mm: Millimeter</li>
+            <li>in: Inches</li>
+            <li>px: Pixels</li>
+            <li>pt: Points</li>
+            <li>pc: Picas</li>
+          </ul>
+          <h2>Unit: Relative</h2>
+          <ul>
+            <li>%&nbsp;&nbsp;: To parent element</li>
+            <li>em&nbsp;: To font size of parent element</li>
+            <li>rem: To font size of root element</li>
+            <li>vm&nbsp;&nbsp;: To 1% of viewport width</li>
+            <li>vh&nbsp;&nbsp;: To 1% of viewport height</li>            
+          </ul>
+        </div>
+</body>
+</html>

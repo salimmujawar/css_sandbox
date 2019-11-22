@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Visibility, Order & Negative Margin</title>
+</head>
+<style>
+  /* even though the blue is overriding down, 
+  but the last witten is class, so the heading color is red */
+  .hello {
+    color: red;
+    /* always avoid -ve value, margin has -ve but not padding */
+    margin-top:-30px;
+  }
+
+  h1 {
+    /* used in responsive app when not to show*/
+    /* display: none; */
+    /* it hides but still takes up the space */
+    /* visibility: hidden; */
+    /* order of precedence important overrides every thing*/    
+    color: blue !important;
+  }
+</style>
+
+<body>
+  <h1 class="hello">Hellow World</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem minus error quidem itaque expedita repudiandae
+    dignissimos odio, nihil debitis ea?</p>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inline  & Block Styling</title>
+  <style>
+    li {
+      display: inline;
+    }
+    li a {
+      padding-right: 20px;
+    }
+    /* to make image center */
+    img {
+      display: block;
+      /* we can't do auto on inline element, so convert to block */
+      margin: auto;
+    }
+    /* when you want to arrange div horizontal */
+    .box{
+      box-sizing: border-box;
+      display: inline-block;
+      width: 32.8%;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Convert a block element to inline -->
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+  <!-- Convert a inline element to block -->
+  <br><br>
+  <img src="./img/leaf.png" alt="My Image">
+  <br><br>
+  <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+  </div>
+  <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+  </div>
+  <div class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+  </div>
+</body>
+</html>

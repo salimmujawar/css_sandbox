@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .clr {
+      clear: both;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container {
+      /* for responsive design, else the content is not visible
+       on mobile you have to scroll*/
+      max-width: 960px;
+      margin:auto;
+    }
+    .box {
+      /* light grey */
+      background: #f4f4f4;
+      /* dark grey */
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .box p {
+      /* Test Align property */
+      text-align: center;
+      /* justify will make edges all even */
+      text-align: justify;
+    }
+    #box-2 {
+      width: 68%;
+      float:left;
+    }
+    #box-3 {
+      width: 30%;
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Box 1</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Box 2</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Box 3</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+        nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+        eligendi?</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+        <h3>Box 4</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloribus maxime, inventore deserunt aspernatur
+          nulla sapiente quos optio beatae, eligendi, nisi voluptatem cumque. Consectetur, enim aliquid. Unde dicta laborum
+          eligendi?</p>
+      </div>
+  </div>
+</body>
+
+</html>
